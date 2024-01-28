@@ -17,10 +17,10 @@ const Arcodeon = ({ title, description }: ArcodeonProps) => {
   return (
     <div className="w-full px-5 flex flex-col gap-px">
       <header
-        className="bg-gray-900 cursor-pointer flex items-center justify-between hover:bg-gray-800 rounded transition-all p-3 text-xl"
+        className="bg-gray-800 cursor-pointer flex items-center justify-between hover:bg-gray-700 rounded transition-all p-3 text-xl"
         onClick={isOpenAcordeon}
       >
-        <h1 className="text-white font-bold uppercase md:p-3">{title}</h1>
+        <h1 className="text-white font-bold uppercase text-xs p-3 md:p-3 md:text-xl">{title}</h1>
 
         {arcodeonOpen ? (
           <IoIosArrowUp size={25} color="#fff" />
